@@ -1,0 +1,80 @@
+@import url('http://fonts.cdnfonts.com/css/product-sans');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('assets/Background.png');
+    /* max-width: 1940px; */
+    /* position: relative; */
+    border: 1px solid red;
+}
+header {
+    background-color: #FFFFFF;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.05);
+   
+
+}
+
+.navigation-links ul {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation-links ul li {
+
+    align-self: center;
+    margin: 1em;
+    list-style-type: none;
+   
+}
+
+.key{
+
+    text-decoration: none;
+}
+.logo-container {
+    /* width: 100%; */
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.navigation-links li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigation-links ul button{
+    border: 1px solid #7C14FD;
+    border-radius: 10px;
+    background: transparent;
+    padding: 5px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+/* font-weight: 600; */
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
