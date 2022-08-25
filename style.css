@@ -5,9 +5,10 @@
     padding: 0;
 }
 body {
-    background-image: url('assets/Background.png');
+    /* background-image: url('assets/Background.png'); */
     /* max-width: 1940px; */
     /* position: relative; */
+    border: red solid 1px;
 }
 header {
     background-color: #FFFFFF;
@@ -98,7 +99,7 @@ header {
     /* align-content: space-between; */
     margin-top: 120px;
     /* position: relative; */
-    padding-left: 300px;
+    padding-left: 200px;
     
 }
 .hero-message {
@@ -106,9 +107,9 @@ header {
     /* margin-top: 320px; */
     /* width: 635px;
     height: 461px; */
-    position: absolute;
+    /* position: absolute;
     width: 435px;
-    height: 461px;
+    height: 461px; */
     /* left: 255px;
     top: 317px; */
     border: red solid 1px;
