@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+                    /* FOOTER SECTION */
+                    .footer{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        /* z-index: 1; */
+                        /* margin-top: -300px; */
+                        border: 2px dashed rgb(180, 9, 129);
+                        
+                    }
+                    .footer-container  {
+                        /* z-index: 1; */
+                        color: #FFFFFF;
+                        display: flex;
+                        gap: 3.6em;
+                        margin-top: 320px;
+                        padding-right: 130px;
+                    }
+                    .footer-logo-section {
+                        /* display: flex; */
+                        justify-content: center;
+                        text-align: center;
+                        
+                    }
+                    div.footer-logo-section img {
+                        cursor: pointer;
+                    }
+                    
+                    .footer {
+                        height: 30rem;
+                        background-image: url('/assets/Vector.png');
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    
+                    div.company-details h5 {
+                    color: #FFFFFF;
+                    
+                    }
+                    .company-details ul {
+                        list-style-type: none;
+                    }
+                    .company-details a {
+                    text-decoration: none;
+                    }
+                    .company-details a:hover {
+                    text-decoration: underline;
+                    }
+                    
+                    
+                    .service-contents ul {
+                        list-style-type: none;
+                    }
+                    .service-contents a {
+                    text-decoration: none;
+                    }
+                    .service-contents a:hover {
+                        text-decoration: underline;
+                    }
+                    
+                    .podcast-contents input {
+                        color: #7C14FD;
+                        border: none;
+                        height: 100px;
+                        background-color: #7C14FD;
+                    }
+                    
+
+

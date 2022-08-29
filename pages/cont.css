@@ -1,13 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    border-sizing:
+    box-sizing: border-box;
 }
-
-
-
-
-
 
 
                     /* FOOTER SECTION */

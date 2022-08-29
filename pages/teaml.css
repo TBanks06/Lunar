@@ -5,13 +5,15 @@
     padding: 0;
 }
 body {
-    background-image: url('assets/Background.png');
+    background-image: url('/assets/Background.png');
     /* max-width: 1940px; */
     /* position: relative; */
     border: 3px solid rgb(26, 150, 57);
+    /* position: absolute; */
 }
 header {
     background-color: #FFFFFF;
+    width: 100%;
 }
 
 .nav-container {
@@ -57,6 +59,7 @@ header {
 .navigation-links li a:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: #000;
 }
 
 .navigation-links ul button{
@@ -75,6 +78,11 @@ header {
 
 
 }
+.navigation-links ul button:hover{
+    color: #32046B;
+    border: 1px solid black;
+}
+
 .hamburger {
     cursor: pointer;
     display: none;
@@ -94,30 +102,61 @@ header {
     color: #0000FF;
     font-size: 1em;
     margin-top: 0.45em;
+    text-align: left;
     
 }
 
 .specialist-section {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly; */
     /* margin: 0 auto; */
     /* padding-left: 9em; */
-    /* flex-wrap: wrap; */
-    /* text-align: center; */
+    background-color: #FFFFFF;
+    
+    text-align: center;
 }
+.container-3 {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.container-3-two {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+.container-3-three {
+    display: flex;
+    justify-content:space-around ;
+    width: 50%;
+    /* margin: auto; */
+    margin-bottom: 50px;
+    margin-left: 156px;
+    /* border: 1px solid red; */
+
+}
+
+
 .container {
     width: 12.5em;
-    height: 20em;
+    height: 17em;
     border: solid 2px #000;
     color: #5f2828;
     padding: 9em 1.25em;
     border-radius: 0.63em;
-    background: #FAF6FF;
-    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    border: 2px solid #b8a714;
     box-shadow: 0px 30px 114px rgba(124, 20, 253, 0.14);
     border-radius: 50px;
-    position: relative;
+    /* position: relative; */
+    /* padding-left: 4em; */
 }
 
 /* .container img {
@@ -129,30 +168,207 @@ border-radius: 50%;
 text-align: center;
 align-self:center
 } */ */
+.card {
+
+}
 .card img {
+    /* background-image: url('/assets/specialist.png'); */
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    padding: 10px 30px;
-    text-align: center;
+    /* padding: 10px 30px; */
+    /* text-align: center; */
     border: 0.18em solid #b070ff;
     /* padding-bottom: 20px; */
+    position: relative;
+    z-index: 1;
+    margin-top: -105px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* object-fit: fill; */
 }
 .container {
     padding-top: 4em;
+    color: #000;
+    /* padding-left: 14em; */
 }
-.contents h3, h4, p {
+.container h3 {
+    
+    font-size: 1.4em;
+    /* margin-top: 0.2em; */
+}
+.container h4 {
+    font-size: 0.86em;
+    margin-top: 0.5em;
+    font-weight: 300;
+    
+}
+.container p {
+    font-size: 0.81em;
+}
+.card-contents {
+    margin-top: 40px;
+}
+.card-contents h3, h4, p {
     color: #000;
     text-align: center;
     /* padding-top:4.25em; */
 }
-.contents h3 {
+.card-contents h3 {
 font-size: 1.25em;
+margin-top: 50px;
 }
-.card img {
-    /* padding-top: 50px; */
+.card-button {
+    padding: 5px 0.9em;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    background: #B070FF;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
 }
+.card-button:hover {
+    color: #32046B;
+    cursor: pointer;
+    border-inline-color: white;
+}
+/* .card img {
+    padding-top: 50px;/
+} */
+
+
+
+                    /* WHY LUNAR SECTION  */
+
+.container-section
+{
+    display: flex;
+    justify-content: space-between ;
+    /* text-align: center; */
+    padding-left: 12em;
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-top: 150px;
+    gap: 2.5em;
+}
+.lunar-contents h3 {
+    text-align: center;
+    margin-bottom: 1.25em;
+}
+.lunar-contents > p {
+    width: 500px;
+    height: 90px;
+    /* text-align: center; */
+    /* letter-spacing: 0.03px; */
+    
+    color: #32046B;
+    text-align: left;
+}
+.lunar-contents .btn {
+    padding: 0.63em 1.26em;
+}
+article.lunar-contents button {
+    align-self: center;
+}
+.image-section img {
+    width: 80%;
+    
+    margin-top: -90px;
+}
+
+                    /* FOOTER SECTION */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* z-index: 1; */
+    /* margin-top: -300px; */
+    border: 2px dashed rgb(180, 9, 129);
+    
+}
+.footer-container  {
+    /* z-index: 1; */
+    color: #FFFFFF;
+    display: flex;
+    gap: 3.6em;
+    margin-top: 320px;
+    padding-right: 130px;
+}
+.footer-logo-section {
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    
+}
+div.footer-logo-section img {
+    cursor: pointer;
+}
+
+.footer {
+    height: 30rem;
+    background-image: url('/assets/Vector.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+article.lunar-contents p,
+a
+ {
+    /* font-size: 18px;
+    line-height: 32px; */
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+article.logo-contents a {
+    text-decoration: none;
+
+}
+
+article.logo-contents a:hover {
+    text-decoration: underline;
+}
+
+
+div.company-details h5 {
+color: #FFFFFF;
+
+}
+.company-details ul {
+    list-style-type: none;
+}
+.company-details a {
+text-decoration: none;
+}
+.company-details a:hover {
+text-decoration: underline;
+}
+
+
+.service-contents ul {
+    list-style-type: none;
+}
+.service-contents a {
+text-decoration: none;
+}
+.service-contents a:hover {
+    text-decoration: underline;
+}
+
+.podcast-contents input {
+    color: #7C14FD;
+    border: none;
+    height: 100px;
+    /* background-color: #7C14FD; */
+    background: #9A48FF;
+    box-shadow: 0px 69px 114px rgba(124, 20, 253, 0.08);
+    border-radius: 20px;
+}
+
+
 
 
 
@@ -161,6 +377,9 @@ font-size: 1.25em;
                     @media screen and (max-width: 768px)  {
     .hamburger {
         display:block;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    
     }
     .navigation-links {
         display: none;
@@ -177,15 +396,56 @@ font-size: 1.25em;
     }
     .hero-article p {
         color: #0000FF;
-        font-size: 0.5em;
+        font-size: 0.7em;
         margin-top: 0.25em;
-    }z\
+    }
 
 .specialist-section {
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: space-around;
-        margin: 0 auto;
+        justify-content: space-around; 
+        /* margin: 0 auto; */
+}  
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
+.container-3-two {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
 }
+
+.container-3-three {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    gap: 7em;
+}
+.lunar-contents p{
+text-align:  center;
+/* height: 100px; */
+width: 80%;
+}
+
+            /* FOOTER SECTION */
+div.footer-container {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+        }
