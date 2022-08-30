@@ -15,6 +15,7 @@ body {
 }
 header {
     background-color: #FFFFFF;
+    width: 100%;
 }
 
 .nav-container {
@@ -25,10 +26,10 @@ header {
     align-items: center;
     height: 100px;
     padding-left: 1.2em;
-    /* padding-right: 1.2em; */
+    padding-right: 1.2em;
     background: #FFFFFF;
     box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.05);
-   
+    border: 1px solid red;
 
 }
 
@@ -37,7 +38,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid teal;
 }
 
 .navigation-links ul li {
@@ -45,8 +45,17 @@ header {
     align-self: center;
     margin: 1em;
     list-style-type: none;
-    border: 1px solid turquoise;
    
+}
+
+.navigation-links li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #32046B;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 18px;
 }
 
 .key{
@@ -58,24 +67,11 @@ header {
     cursor: pointer;
     padding-left: 50px;
 }
-/* .navigation-links ul li {
-    display:inline-flex;
-    align-items:flex-end;
-    justify-content: space-between;
-    list-style-type: none;
-} */
-.navigation-links li a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #000000;
-    font-family: 'HK Grotesk', sans-serif;
-    font-style: normal;
-    /* font-weight: 600; */
-    font-size: 18px;
-}
+
 .navigation-links li a:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: #000;
 }
 
 .navigation-links ul button{
@@ -83,7 +79,6 @@ header {
     border-radius: 10px;
     background: transparent;
     padding: 5px;
-    color: #7C14FD;
     font-family: 'HK Grotesk';
     font-style: normal;
 /* font-weight: 600; */
@@ -91,11 +86,13 @@ header {
     line-height: 19px;
     text-align: center;
     cursor: pointer;
-}
+    color: #7C14FD;
 
-.navigation-links ul button:hover {
-    color: #000000;
-    cursor: pointer;
+
+}
+.navigation-links ul button:hover{
+    color: #32046B;
+    border: 1px solid black;
 }
 
 .hamburger {
@@ -348,7 +345,7 @@ z-index: -9;
 } */
 
                 /* HAMBURGER STYLING  */
-                .menuItem {
+                /* .menuItem {
                     display: block;
                     margin: 2rem 4rem;
                     font-size: 1.8rem;
@@ -392,7 +389,7 @@ z-index: -9;
                   
                   .showMenu {
                     transform: translateY(0);
-                  }
+                  } */
 
 
 
@@ -695,7 +692,7 @@ section.why-lunar img {
                 justify-content: space-evenly;
                 /* z-index: 1; */
                 /* margin-top: -300px; */
-                border: 2px dashed rgb(180, 9, 129);
+                /* border: 2px dashed rgb(180, 9, 129); */
                 
             }
             .footer-container  {

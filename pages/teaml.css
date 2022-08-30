@@ -1,4 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/product-sans');
+@import url('http://fonts.cdnfonts.com/css/hk-groteks');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +10,7 @@ body {
     background-image: url('/assets/Background.png');
     /* max-width: 1940px; */
     /* position: relative; */
-    border: 3px solid rgb(26, 150, 57);
+    /* border: 3px solid rgb(26, 150, 57); */
     /* position: absolute; */
 }
 header {
@@ -27,7 +29,7 @@ header {
     padding-right: 1.2em;
     background: #FFFFFF;
     box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.05);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -49,7 +51,7 @@ header {
 .navigation-links li a {
     text-decoration: none;
     cursor: pointer;
-    color: #000000;
+    color: #32046B;
     font-family: 'HK Grotesk';
     font-style: normal;
     /* font-weight: 600; */
@@ -100,7 +102,7 @@ header {
 
 .hero-section {
     padding: 9em 14em;
-    border: 2px dotted brown;
+    /* border: 2px dotted brown; */
 }
 
 .hero-article h1 {
@@ -157,12 +159,12 @@ header {
 .container {
     width: 12.5em;
     height: 17em;
-    border: solid 2px #000;
+    /* border: solid 2px #000; */
     color: #5f2828;
     padding: 9em 1.25em;
     border-radius: 0.63em;
     background: #FFFFFF;
-    border: 2px solid #b8a714;
+    /* border: 2px solid #b8a714; */
     box-shadow: 0px 30px 114px rgba(124, 20, 253, 0.14);
     border-radius: 50px;
     /* position: relative; */
