@@ -180,9 +180,9 @@ border-radius: 50%;
 text-align: center;
 align-self:center
 } */ */
-.card {
+/* .card {
 
-}
+} */
 .card img {
     /* background-image: url('/assets/specialist.png'); */
     align-items: center;
@@ -297,7 +297,7 @@ article.lunar-contents button {
     justify-content: space-evenly;
     /* z-index: 1; */
     /* margin-top: -300px; */
-    border: 2px dashed rgb(180, 9, 129);
+    /* border: 2px dashed rgb(180, 9, 129); */
     
 }
 .footer-container  {
