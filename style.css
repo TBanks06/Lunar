@@ -9,8 +9,9 @@ body {
     background-image: url(assets/Background.png);
     /* max-width: 1940px; */
     /* position: relative; */
-    border: red solid 1px;
-    background-color: #FFFFFF;
+    /* border: red solid 1px; */
+    /* background-color: #FFFFFF; */
+    /* background: #E5E5E5; */
 }
 header {
     background-color: #FFFFFF;
@@ -36,6 +37,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 2px solid teal;
 }
 
 .navigation-links ul li {
@@ -43,6 +45,7 @@ header {
     align-self: center;
     margin: 1em;
     list-style-type: none;
+    border: 1px solid turquoise;
    
 }
 
@@ -60,16 +63,16 @@ header {
     align-items:flex-end;
     justify-content: space-between;
     list-style-type: none;
-}
+} */
 .navigation-links li a {
     text-decoration: none;
     cursor: pointer;
     color: #000000;
-    font-family: 'HK Grotesk';
+    font-family: 'HK Grotesk', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    /* font-weight: 600; */
     font-size: 18px;
-} */
+}
 .navigation-links li a:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -106,8 +109,8 @@ header {
     /* align-content: space-between; */
     margin-top: 150px;
     /* position: relative; */
-    padding-left: 40px;
-    border: 3px solid tomato;
+    /* padding-left: 40px; */
+    /* border: 3px solid tomato; */
 
     
 }
@@ -121,13 +124,13 @@ header {
     height: 461px; */
     /* left: 255px;
     top: 317px; */
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 .hero-message h1 {
     font-family: 'Product Sans', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 76px;
+    /* font-weight: 700; */
+    font-size: 46px;
     line-height: 115.7%;
     letter-spacing: -0.015em;
     color: #000000;
@@ -139,10 +142,10 @@ header {
 .h1-bold{
     color: #7C14FD;
 }
-.hero-message h1 img {
+/* .hero-message h1 img {
     
-} 
-.hero-image p {
+}  */
+.hero-message p {
     margin-top: 26px;
 }
 .hero-message-logos {
@@ -174,7 +177,14 @@ header {
     margin-top: 20px;
     border: none;
     cursor: pointer;
-    
+     font-family: 'HK Grotesk';
+    font-style: normal;
+/* font-weight: 700; */
+    font-size: 24px;
+    line-height: 29px;
+/* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
 }
 .hero-button:hover {
     color: #000000;
@@ -199,7 +209,7 @@ header {
             /* 01 container */
 
 .section-2-container{
-    background-color: #FFFFFF;
+    /* background: #E5E5E5; */
     /* width: 400px; */
     /* margin-top: -200px; */
    z-index: -1;
@@ -208,8 +218,10 @@ header {
    background-size: contain;
    height: 40em;
 
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     margin-top: 10px;
+    position: relative;
+    margin: 0 auto;
 
 
 }
@@ -233,37 +245,48 @@ header {
     z-index: 4;
     position: absolute;
     left: 290px;
-    top: 760px;
+    top: 80px;
     
 
 }
 div.one-class {
-top: 6px;
-left: 40px;
-z-index: 3;
+    top: 6px;
+    left: 40px;
+    z-index: 3;
 }
 
 .two{
     z-index: 6;
     position: absolute;
-    right: 50px;
-    top: 70px;
+    right: -80px;
+    bottom: 390px;
 }
 
 div.two-class {
     z-index: 8;
-    bottom: 400px;
+    bottom: 290px;
     left: 70px;
 }
 
-p.three {
+.three {
   z-index: 10;
-  top: 100px;
-  left: 250px;  
+  top: 30px;
+  left: 290px;  
 }
 div.three-class {
     left: 300px;
-    top: 130px;
+    top: 90px;
+}
+
+p.four {
+    z-index: 11;
+    top: 90px;
+    right: 60px;
+}
+
+div.four-class {
+    top: 56px;
+    left: 590px;
 }
 
 div.section-2-div {
@@ -274,16 +297,23 @@ div.section-2-div {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    background: #e90808;
+    background: #FFFFFF;
     box-shadow: 0px 69px 114px rgba(124, 20, 253, 0.08);
     /* border-radius: 10px; */
     z-index: 2;
     position: relative;
 }
+.article-2-div {
+    padding: 3px;
+}
 .article-2-div h4 {
     color: #7C14FD;
 
 }
+.s2c-img {
+   width: 40%; 
+}
+
 div.section-2-div p {
     width: 510px;
     height: 90px;
@@ -317,8 +347,52 @@ z-index: -9;
 
 } */
 
-
-
+                /* HAMBURGER STYLING  */
+                .menuItem {
+                    display: block;
+                    margin: 2rem 4rem;
+                    font-size: 1.8rem;
+                    color: white;
+                    text-decoration: none;
+                  }
+                  
+                  .menuItem:hover {
+                    text-decoration: underline;
+                  }
+                  
+                  .hamburger {
+                    position: fixed;
+                    z-index: 100;
+                    top: 1rem;
+                    right: 1rem;
+                    padding: 4px;
+                    border: black solid 1px;
+                    background: white;
+                    cursor: pointer;
+                  }
+                  
+                  .closeIcon {
+                    display: none;
+                  }
+                  
+                  .menu {
+                    position: fixed;
+                    transform: translateY(-100%);
+                    transition: transform 0.2s;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 99;
+                    background: black;
+                    color: white;
+                    list-style: none;
+                    padding-top: 4rem;
+                  }
+                  
+                  .showMenu {
+                    transform: translateY(0);
+                  }
 
 
 
@@ -331,11 +405,286 @@ section.section-3 {
     background-size: 100% 100%;
     background-image: url(assets/Background.png);
 }
+div.book-form {
+align-self: center;
+padding: 8em;
+}
+
 .book-info {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5em;
 }
+
+div.book-message p {
+    text-align: center;
+    font-family: 'HK Grotesk', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 2.75em;
+    
+    font-family: 'Product Sans';
+    font-style: normal;
+    /* font-weight: 700; */
+    /* font-size: 44px; */
+    line-height: 128.3%;
+/* or 82px */
+
+
+color: #FFFFFF;
+
+    
+    /* padding-left: 10px; */
+}
+
+#email {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+
+}
+
+div.book-form button {
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #32046B;
+    box-shadow: 0px 41px 51px rgba(118, 82, 164, 0.39);
+
+}
+
+                /* SECTION 4 */
+.section-4 {
+    margin: 0 auto;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.section-4 h3 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 137.2%;
+/* or 71px */
+    text-align: center;
+    color: #000000
+}
+
+div.white-box {
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 69px 114px rgba(124, 20, 253, 0.08);
+    border-radius: 20px;
+    
+}
+img.test1 {
+    width: 150px;
+    /* position: absolute; */
+    /* height: 50px; */
+}
+img.test {
+    /* position: absolute; */
+}
+
+div.text-box {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 27px;
+    line-height: 51px;
+/* or 159% */
+    letter-spacing: 0.2px;
+    color: #32046B;
+}
+
+
+
+                    /*SECTION DGMA  */
+section.dgma {
+    margin: 0 auto;
+    background: #7C14FD;
+    width: 100%;
+    height: 350px;
+    background-image: url(assets/Background.png);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dgma-container {
+    width: 400px;
+}
+div.dgma-container p {
+    font-family: 'Product Sans';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 30px;
+    line-height: 128.3%;
+    /* margin-top: 50px; */
+/* or 82px */
+    padding-left: 150px;
+    color: #FFFFFF;
+    width: 400px;
+    align-self: center;
+}
+
+.sass {
+    margin: 10px auto;
+    width: 300px;
+    height: 250px;
+    background: #9642FF;
+    box-shadow: 0px 69px 114px rgba(124, 20, 253, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+}
+.saas h4 {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 28px;
+    line-height: 28px;
+/* or 131% */
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    width: 300px;
+    align-self: center;
+}
+
+.saas p {
+    width: 300px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 42px;
+    /* or 156% */
+    color: #FFFFFF; 
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    
+}
+
+.dgma-btn {
+    background: #FFFFFF;
+    box-shadow: 0px 26px 46px #8A30FB;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+/* font-weight: 700; */
+        font-size: 19px;
+line-height: 10px;
+/* identical to box height, or 158% */
+color: #000000;
+
+}
+.dgma-btn:hover {
+    color: #7C14FD;
+}
+
+.wp {
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+    background: #9642FF;
+    box-shadow: 0px 69px 114px rgba(124, 20, 253, 0.08);
+    border-radius: 20px;
+}
+
+.wp h4 {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 28px;
+    line-height: 28px;
+/* or 131% */
+    letter-spacing: -1px;
+    color: #FFFFFF;
+
+}
+
+.wp p {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+
+                /* WHY LUNAR SECTION */
+section.why-lunar {
+    margin: 200px auto;
+    background: #E5E5E5;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+section.why-lunar h3 {
+    font-family: 'Product Sans';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 32px;
+    line-height: 137.2%;
+    /* or 71px */
+     text-align: center;
+     color: #000000;
+    
+}
+section.why-lunar p {
+    width: 450px;
+    margin-top: 40px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 20px;
+    line-height: 42px;
+/* or 163% */
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #32046B;
+}
+
+section.why-lunar img {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -444,5 +793,15 @@ article.logo-contents a:hover {
     }
     article.hero-message {
         text-align: left;
+    }
+                /*SECTION 2 CONTAINER  */
+    
+                /* SECTION 3 */
+
+    div.book-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
