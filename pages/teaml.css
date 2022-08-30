@@ -179,10 +179,10 @@ height: 100px;
 border-radius: 50%;
 text-align: center;
 align-self:center
-} */ */
-/* .card {
+} */ 
+.card {
 
-} */
+}
 .card img {
     /* background-image: url('/assets/specialist.png'); */
     align-items: center;
