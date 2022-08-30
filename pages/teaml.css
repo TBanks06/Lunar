@@ -105,7 +105,7 @@ header {
 
 .hero-article h1 {
     font-size: 3em;
-    font-family: ;
+    font-family: "Product Sans",sans-serif;
     color: #000;
 }
 .hero-article p {
@@ -415,7 +415,7 @@ text-decoration: none;
     
     .hero-article h1 {
         font-size: 1em;
-        font-family: ;
+        font-family: "Product Sans", sans-serif ;
         color: #000;
     }
     .hero-article p {
